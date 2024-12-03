@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CarVerse</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+
+    
+
+
+
+    <!-- Favicon -->
+    <link href="/static/img/w.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Template Stylesheet -->
+    <link href="styleabout.css" rel="stylesheet">
+
+    <!-- NEW ABOUT-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+
+<style>
+#team {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #d1d1d1;
+    color: #145889;
+}
+#team h1 {
+    position: relative;
+    padding: 0px 0px 15px;
+}
+#team p {
+    font-size: 15px;
+    font-style: italic;
+    padding: 0px;
+    margin: 25px 0px 40px;
+}
+#team h1::after {
+    content: '';
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 90px;
+    margin: 0 auto;
+    display: block;
+
+}
+#team .member {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+}
+#team .member .member-info {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: -200px;
+    transition: 0.4s;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+#team .member:hover .member-info {
+    left: 0px;
+    right: 0px;
+}
+#team .member h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+}
+#team .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+}
+#team .member .social-links {
+    margin-top: 15px;
+}
+#team .member .social-links a {
+    transition: none;
+    color: #fff;
+}
+#team .member .social-links a:hover {
+    color: #ffc107;
+}
+#team .member .social-links i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+</style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-light shadow p-0" style="background-color: black  !important;">
+            <a class="navbar-brand" href="#index.html" id="carlogo">
+                <img src="uploads/logo/Designer.png" alt="CarVerse Logo" width="80" class="d-inline-block align-text-top">
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link" style="color: white;">Home</a>
+                    <a href="ourteam.html" class="nav-item nav-link active" style="color: grey;">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            style="color: white;">Brands</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="company-specific-details.html?brand=Porsche" class="dropdown-item">Porsche</a>
+                            <a href="company-specific-details.html?brand=Bugatti" class="dropdown-item">Bugatti</a>
+                            <a href="company-specific-details.html?brand=BMW" class="dropdown-item">BMW</a>
+                            <a href="company-specific-details.html?brand=Lamborghini" class="dropdown-item">Lamborghini</a>
+                            <a href="company-specific-details.html?brand=Ferrari" class="dropdown-item">Ferrari</a>
+                            <a href="company-specific-details.html?brand=Ford" class="dropdown-item">Ford</a>
+                            <a href="company-specific-details.html?brand=Mercedes" class="dropdown-item">Mercedes-Benz</a>
+                            <a href="company-specific-details.html?brand=McLaren" class="dropdown-item">Mclaren</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            style="color: white;">Dealers</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="porschedealer.html" class="dropdown-item">Porsche</a>
+                            <a href="bmw.html" class="dropdown-item">BMW</a>
+                            <a href="lambodealer.html" class="dropdown-item">Lamborghini</a>
+                            <a href="Ferrari.html" class="dropdown-item">Ferrari</a>
+                            <a href="Ford.html" class="dropdown-item">Ford</a>
+                            <a href="Mercedesde.html" class="dropdown-item">Mercedes-Benz</a>
+                            <a href="McLarende.html" class="dropdown-item">Mclaren</a>
+                        </div>
+                    </div>
+                    <a href="signup-free.html" class="nav-item nav-link" style="color: white;">Discussion Forum</a>
+                </div>
+                <a href="compare.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
+                    id="compare123">Compare Cars<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Header End -->
+        <div class="container-xxl py-5 bg-dark page-header mb-5" style="background-image: url('wallpapers/porsche_taycan_gts_4k_2-2560x1440.jpg');">
+            <div class="container my-5 pt-5 pb-4">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb text-uppercase">
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Header End -->
+
+
+        <!--
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="row g-0 about-bg rounded overflow-hidden">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid w-100" src="img/about-1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid" src="img/about-2.jpg" style="width: 85%; margin-top: 15%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid" src="img/about-3.jpg" style="width: 85%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid w-100" src="img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">We Help To Get The Best Job And Find A Talent</h1>
+                        <p class="mb-4">We help people to get new skill and be perfect in their existing field , so that they would be ready to do their task perfectly. <br>They  are:</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Tempor erat elitr rebum at clita</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Clita duo justo magna dolore erat amet</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         About End -->
+         <!--New About -->
+         <section id="team">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                      <h1>Meet Our Team</h1>
+                      <p>We students of Vishwakarma Institute of Technology, Pune are glad to show you our work and thankfull to College fo giving us this opportunity.</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                          <div class="member-img">
+                              <img src="team_members\WhatsApp Image 2024-04-24 at 14.40.21_39bc27d0.jpg" class="img-fluid" alt="">
+                          </div>
+                            <div class="member-info">
+                                <h4>Vedant Deore</h4>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/vedant-deore-3b527b264"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="https://instagram.com/vedant_deore45?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                          <div class="member-img">
+                              <img src="team_members\WhatsApp Image 2024-04-24 at 14.59.44_246dbaec.jpg" class="img-fluid" alt="" style="height: 805;">
+                          </div>
+                            <div class="member-info">
+                                <h4>Rajas Bhosale</h4>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="https://instagram.com/_kalpesh_deore_?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                          <div class="member-img">
+                              <img src="team_members\WhatsApp Image 2024-04-24 at 14.56.46_2f51302d.jpg" class="img-fluid" alt="">
+                          </div>
+                            <div class="member-info">
+                                <h4>Vishal Bokare</h4>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="https://www.instagram.com/invites/contact/?i=dvbzep4t4xg5&utm_content=448wdzw"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                          <div class="member-img">
+                              <img src="team_members\WhatsApp Image 2024-04-24 at 14.37.14_ea1973bc.jpg" class="img-fluid" alt="">
+                          </div>
+                            <div class="member-info">
+                                <h4>Sahil Deogade</h4>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/vaibhav-deore-906759259"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="https://instagram.com/iamvaibhavdeore?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                          <div class="member-img">
+                              <img src="team_members\WhatsApp Image 2024-04-24 at 14.40.01_d2e08026.jpg" class="img-fluid" alt="">
+                          </div>
+                            <div class="member-info">
+                                <h4>Darshan Biradar</h4>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/gayatri-dere-554150263"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="https://instagram.com/gayatri_d15?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+     <!-- Credits: https://www.markuptag.com/bootstrap-4-meet-the-team-section-example/ -->
+         <!--New About End -->
+
+
+        <!-- Footer Start -->
+        <hr style="margin-top: 10%;">
+
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" id="footer1234"
+            style="margin-top: 200px;">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">CarVerse</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Homepage</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick links</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Homepage</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>VIT,Pune , Maharashtra,Pune</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Carverse@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">About Us</h5>
+                        <span style="margin-left: 10px;">
+                            CarVerse is your premier online destination for delving deep into the world of luxury car brands and
+                            their iconic models. Our platform is dedicated to delivering meticulously researched, engaging.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="mainabout.js"></script>
+</body>
+
+</html>
